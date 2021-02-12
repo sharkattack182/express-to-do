@@ -1,0 +1,20 @@
+{
+  "name": "express-to-do",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharkattack182/express-to-do.git"
+  },
+  "author": "Matthew Courtney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharkattack182/express-to-do/issues"
+  },
+  "homepage": "https://github.com/sharkattack182/express-to-do#readme"
+}
