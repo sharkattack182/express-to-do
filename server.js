@@ -40,6 +40,17 @@ connection.connect(function(err) {
       })
   });
 
+  app.post("/", function(req,res) {
+    connection.query("INSERT INTO to_dos SET ?", {
+        note_name: req.body.note_name, 
+        note_content: req.body.note_content
+    }, 
+    function(err, response) {
+        if(err) throw err;
+        res.redirect("/");
+    })
+});
+
 
   app.listen(PORT, function() {
     // Log (server-side) when our server has started

@@ -8,5 +8,19 @@
 <body>
     <h1>To do List </h1>
     {{{ body }}}
+
+    <h2>Add a New Task</h2>
+<form action="/" method="POST">
+    <strong>
+        <p>Task Title</p>
+    </strong>
+    <textarea name="note_name" cols="30" rows="5"></textarea>
+    <strong>
+        <p>Task Text</p>
+    </strong>
+    <textarea name="note_content" cols="30" rows="5"></textarea>
+    <br>
+    <button type="submit">Add Note</button>
+</form>
 </body>
 </html>
