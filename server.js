@@ -32,3 +32,16 @@ connection.connect(function(err) {
     console.log("connected as id " + connection.threadId);
   });
   
+
+  app.get("/", function(req,res) {
+      connection.query("SELECT * FROM to_dos;", function(err, response) {
+          if(err) throw err;
+          res.render("index", {to_dos: response});
+      })
+  });
+
+
+  app.listen(PORT, function() {
+    // Log (server-side) when our server has started
+    console.log("Server listening on: http://localhost:" + PORT);
+  });
