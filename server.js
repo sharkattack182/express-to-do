@@ -51,7 +51,7 @@ connection.connect(function(err) {
     })
 });
 
-
+// Will need a get route that SELECTS * FROM to_dos WHERE completed = false/true
   app.listen(PORT, function() {
     // Log (server-side) when our server has started
     console.log("Server listening on: http://localhost:" + PORT);

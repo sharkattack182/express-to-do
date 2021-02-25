@@ -13,3 +13,5 @@ VALUES ("Wake Up", "Get out of bed and start the morning routine."),("Morning Ro
 
 
 SELECT * FROM to_dos;
+
+-- this will also need a value called completed that will by default be set to false then a button to complete a task. 

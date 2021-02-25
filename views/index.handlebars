@@ -7,8 +7,10 @@
             <p>{{note_name}}</p>
         </strong>
         <p>{{note_content}}</p>
+        <button data-todoId = "{{this.id}}" class="deleteTodo">Delete Todo</button>
     </li>
     {{/each}}
 </ul>
 <hr>
 
+{{!-- will need to add a button that can complete the task will probalby just use a checkbox --}}
